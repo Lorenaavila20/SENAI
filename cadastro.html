@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../HTML/CSS/cadastro.css">
+    <title>cadastro</title>
+</head>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    </head>
+    
+    <body>
+    
+      <header id="header">
+         <div class="container">
+ 
+             <div class="flex">
+ 
+                <a href="./index.html"> <img src="./IMG/logo.png" alt="Logo" height="90px"></a>
+ 
+                 <nav>
+                     <ul>
+                         <li> <a href="./Página Inicial.html">INICIAL</a></li>
+                         <li> <a href="./Catalogo.html">CATÁLOGO</a></li>
+                         <li> <a href="./Sobre.html">SOBRE</a></li>
+                         <li> <a href="./login.html">LOGIN</a></li>
+                         
+                     </ul>
+                 </nav>
+ 
+                     <div class="btn-contato">
+                         <a href="#"> <button>CONTATO</button></a>
+                     </div> <!--Btn_contato-->
+ 
+             </div> <!--Flex-->
+ 
+         </div> <!--Container-->
+     </header>
+    <br>
+    <br>
+    <br>
+    <div id='containerr'>
+      <div class='card'>
+        <h1> Cadastrar </h1>
+        
+        <div id='msgError'></div>
+        <div id='msgSuccess'></div>
+        
+                <div class="label-float">
+                   <input type="text" id="nome" placeholder=" " required>
+                   <label id="labelNome" for="nome">Nome</label>
+                </div>
+    
+                <div class="label-float">
+                   <input type="text" id="usuario" placeholder=" " required>
+                   <label id="labelUsuario" for="usuario">Usuário</label>
+                </div>
+                
+                <div class="label-float">
+                   <input type="password" id="senha" placeholder=" " required>
+                   <label id="labelSenha" for="senha">Senha</label>
+                   <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                   
+                </div>
+    
+                <div class="label-float">
+                   <input type="password" id="confirmSenha" placeholder=" " required>
+                   <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                   <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                
+                <div class='justify-center'>
+                   <button id="bot" onclick='cadastrar()'>Cadastrar</button>
+                </div>
+    
+        
+      </div>
+      </div>
+      <script src="../HTML/JS/cadastro.js"></script>
+    </body>
+</html>

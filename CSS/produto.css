@@ -1,0 +1,308 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {overflow-x: hidden;
+    
+    background-color: #07091a;
+}
+
+
+ /* >>>>>>>>>>>>>>>>>>>>>>>>> MENU <<<<<<<<<<<<<<<<<<<<<< */
+
+.container{
+    max-width: 1020px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Justifica os itens: Extrema direita/esquerda/meio*/
+}
+
+header{
+    width: 100%;
+    padding: 10px 4%;
+    top: 0;
+    left: 0;
+    transition: .5s ;
+}
+
+header a{
+    color: rgb(179, 132, 58);
+}
+
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    
+    text-decoration: none;
+}
+
+.btn-contato button{
+    width: 110px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* >>>>>>>>>>>>>>>>>>> ATALHO  <<<<<<<<<<<<<*/
+
+.atalho{
+    position: relative;
+    top: -630px;
+    left: 30%;
+
+}
+
+.atalho a{
+    text-decoration: none;
+    color: rgb(179, 132, 58);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ /* >>>>>>>>> PÁGINA ATUAL <<<<<<<<<<< */
+
+ u{
+    color: rgb(179, 132, 58);
+}
+
+
+/* >>>>>>>>>>>>>>>>>>> CAIXINHA DE QUANTIDADE <<<<<<<<<<<<<*/
+
+.quantity-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+  }
+
+  .quantity-input {
+    position: relative;
+    width: 40px;
+    text-align: center;
+    background-color: #17141d;
+    color: #ffffff;
+    border: none;
+    left: 15px;
+  }
+
+  .quantity-btn {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(187, 52, 52);
+    color: #fff;
+    border-radius: 5%;
+    cursor: pointer;
+    left: 15px;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>> NOME DO PRODUTO >>>>>>>>>>>>>> */
+
+ .produto h2{
+    position: relative;
+    top: -605px;
+    left: 1000px;
+    font-size: 30px;
+    color: #ffffff;
+}
+     /* >>>>>>>>>>>>> 1x <<<<<<<<<<<<<<<< */
+.produto h3{
+    position: relative;
+    top: -635px;
+    left: 1150px;
+    font-size: 15px;
+    color: rgba(243, 237, 237, 0.918);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+         /* >>>>>>>>>>>>>>>>>>> VALOR DO PRODUTO <<<<<<<<<<<<<<< */
+.produto h1{
+    position: relative;
+    top: -605px;
+    left: 1000px;
+    font-size: 30px;
+    color: #a52a2a;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>> ADCIONAR A SACOLA <<<<<<<<<<<<<<<< */
+
+.adc_sacola{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 6px;
+    top: -640px;
+    left: 60%;
+    text-align: center;
+    background-color: #a52a2a;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.adc_sacola h3{
+    position: relative;
+    top: 20%;
+}
+
+  /* <<<<<<<<<<<<<<<<  FUNDO PRODUTO   >>>>>>>>>>>>>> */
+
+.painel figure {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: -1rem 0 3rem #000;
+    width: 450px;
+    left: 25%;
+    top: 90px;
+    align-self: left;
+    background-color: #17141d;
+}
+
+.painel figure img{
+    width: 450px;
+}
+
+.quantity-box{
+    position: relative;
+    top: -600px;
+    left: 1000px;
+    font-size: 30px;
+}
+
+.frete{
+    position: relative;
+    background-color: #17141d;
+    width: 480px;
+    height: 100px;
+    left: 1000px;
+    top: -600px;
+}
+
+          /* >>>>>>>>>>>>>> LINHAS <<<<<<<<<<< */
+
+hr{
+    position: relative;
+    width: 25%;
+    left: 1000px;
+    top: -630px;
+    opacity: 0.3;
+}
+
+
+
+
+  /* <<<<<<<<<<<<<<<< FRETE >>>>>>>>>>>>>> */
+
+
+
+
+.calculoFrete {
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    width: 20%;
+    left: 1000px;
+    top: -600px;
+   }
+
+   .calculoFrete pre{
+    font-family:'Times New Roman', Times, serif;
+    color:#ffffffde;
+    font-size: 20px;
+   }
+   .colunaInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 15px  
+   }
+   .inputCep {
+   border-radius: 8px;
+   transition: all 0.25s ease 0s;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   height: 48px;
+   padding: 0px 16px;
+   color: rgb(102, 102, 102);
+   border: 1px solid rgb(153, 153, 153);
+   background: transparent;
+   margin-top: 5px;
+   }
+   
+   .btn-cep {
+     min-width: 50px;
+       cursor: pointer;
+       border: 2px solid rgb(102, 102, 102);
+       border-radius: 4px;
+       background-color: #17141d;
+       color: rgb(102, 102, 102);
+       margin-left: 10px;
+       height: 48px;
+       font-size: 16px;
+   }
+   .informacao-de-entrega{
+    position: relative;
+       margin: 0px 0 15px 0;
+       width: 100%;
+       padding: 16px;
+       border-radius: 12px;
+       margin: 10px auto 0px;
+       font-size: 14px;
+       color: rgb(102, 102, 102);
+       background-color: #17141d;
+       border: 1px solid rgba(241, 241, 241, 0.301);
+       display:flex;
+       flex-direction: row;
+       width: 20%;
+        left: 250px;
+        top: -600px;
+   }
+   .shipping-preview-line p {
+       text-align: left !important;
+       color:rgb(187, 187, 187);
+       padding: 0 15px 5px 0;
+     font-size: var(--baseFontSize);
+   }
+
+
+     /* <<<<<<<<<<<<<<<< COMPRAR >>>>>>>>>>>>>> */
+
+     .comprar{
+        position: relative;
+        width: 200px;
+        height: 40px;
+        color: #ffffff;
+        border-radius: 6px;
+        top: -600px;
+        left: 53%;
+        text-align: center;
+        background-color: #a52a2a;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border: none;
+    }
+    
+ 

@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../IMG/vinho.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+#containerr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #4d4a4a80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  width: 400px;
+}
+
+h1{
+  font-family: 'Exo', sans-serif;
+    font-size: 35px;
+	font-weight: 200;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(179, 132, 58);
+}
+
+.label-float input{
+  font-family: 'Exo', sans-serif;
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid rgb(179, 132, 58);
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  font-family: 'Exo', sans-serif;
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  font-family: 'Exo', sans-serif;
+  border-bottom: 2px solid white;
+}
+
+.label-float label{
+  font-family: 'Exo', sans-serif;
+  color: white;
+  /* pointer-event: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+
+#bot{
+  background-color: transparent;
+  border-color: black;
+  color: white;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+#bot:hover{
+  background-color: rgb(179, 132, 58);
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#msgError{
+  text-align: center;
+  color: white;
+  background-color: rgb(179, 132, 58);
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.container{
+  /* position: relative; */
+  max-width: 1020px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Justifica os itens: Extrema direita/esquerda/meio*/
+}
+
+header{
+  width: 100%;
+  padding: 10px 4%;
+  top: 0;
+  left: 0;
+  transition: .5s ;
+}
+
+header a{
+  /* font-family: 'Poppins' , sans-serif; */
+  font-size: 16px;
+  color: rgb(179, 132, 58);
+}
+
+
+header ul{
+  list-style-type: none;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a{
+  
+  text-decoration: none;
+}
+
+.btn-contato button{
+  width: 110px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(29, 32, 54);
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}

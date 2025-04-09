@@ -1,0 +1,534 @@
+@import 'https://fonts.googleapis.com/css?family=Economica';
+
+
+
+html, body {overflow-x: hidden;
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  background-color: #07091a;
+}
+
+
+.logo{
+    position: relative;
+    top: -250px;
+    left: -20px;
+    background-color:#17141dda;
+    border-radius: 15px;
+}
+
+.logo_footer img{
+  position: relative;
+  top: 100px;
+  left: -20px;
+  background-color:#17141dda;
+  border-radius: 15px;
+  width: 300px;
+}
+
+/* >>>>>>>>>>>>> TEXTO DAS IMAGENS <<<<<<<<<< */
+
+.container h1{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    font-size: 3.5vw;
+    margin: 0;
+    transition: font-size 0.3s;
+    vertical-align: middle;
+  }
+
+.container h3{
+    text-transform: uppercase;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.3vw;
+    transition: all 0.3s;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+  }
+
+.container p{
+    margin: 0;
+    font-family: 'Economica', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+  }
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  &:hover{
+    & > .section{
+      filter: brightness(20%);
+    }
+    & > .section:hover{
+      filter: brightness(90%);
+    }
+  }
+  
+  .section{
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    transition: all 0.4s;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    flex: 1;
+    
+    .cont_title{
+      position:relative;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin-top: 27vh;
+      
+      letter-container{
+        position: relative;
+        width: 2vw;
+        height: 100px;
+        position: relative;
+        margin: auto;
+      
+        .lettering{
+        transition: all 0.3s;
+        color: white;
+        
+        span{
+          height: 100vw;
+          font-family: 'Economica', sans-serif;
+          font-size: 1.6vw;
+          text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+          position: absolute;
+          width: 15px;
+          left: 0;
+          transform-origin: bottom center;
+        }
+    
+        }
+      }
+    
+     
+      
+    }
+    
+    .cont_desc{
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 12vw;
+      height: auto;
+      margin: auto;
+      opacity: 0;
+      transition: opacity 0.8s, transform 0.7s, padding-top 0.9s;
+      padding-top: 6vh;
+      transform: scale(1);
+      
+    }
+    
+    &:hover{
+      flex-grow: 1.8;
+      transition: flex 0.2s;
+      
+      & > .cont_title h1{
+        font-size: 5.3vw;
+        transition: font-size 0.4s;
+      }
+      
+      & > .cont_title h3{
+        font-size: 1.6vw;
+        transition: all 0.4s;
+      }
+      
+      & > .cont_desc{
+        opacity: 1;
+        padding-top: 2vh;
+        transform: scale(1.5);
+        transition: opacity 0.7s, padding-top 0.5s, transform 0.1s;
+        
+        transition-delay: 0s, 0.1s, 0s;
+      }
+      
+    }
+    
+    &:nth-child(1){
+      background: url("../IMG/Fundos_Carrossel/adega1.jpg") center;
+    }
+    &:nth-child(2){
+      background: url("../IMG/Fundos_Carrossel/destilado2.jpg") center;
+    }
+    &:nth-child(3){
+      background: url("../IMG/Fundos_Carrossel/vinho1.webp") center;
+    }
+    &:nth-child(4){
+      background: url("../IMG/Fundos_Carrossel/ofertas.jpg") center;
+
+    }
+    &:nth-child(5){
+      background: url("../IMG/Fundos_Carrossel/drink1.jpg") center;
+    }
+  }
+}
+
+ /* >>>>>>>>>>>>>>>>>>>>>>> IMAGENS DE DESTAQUE <<<<<<<<<<<< */
+
+.Destaques{
+    position: relative;
+    top: -230px;
+}
+
+.titulo h1{
+    position: relative;
+    top: 50px;
+    font-weight: 2;
+    position: relative;
+    text-transform: uppercase;
+    color:#f5f5f5da;
+    font-family: 'Economica', sans-serif;
+    font-size: 3.5vw;
+    margin: 0;
+    transition: font-size 0.3s;
+    vertical-align: middle;
+}
+
+
+
+.painel li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 60px;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    }
+
+.painel{
+    background-size: cover;
+    position: relative;
+    top: 250px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.figura{
+  display: flex;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  overflow: hidden;  
+}
+
+
+.painel figure img{
+    position: relative;
+    top: 10px;
+    left: -9px;
+    width: 220px;
+    height: 340px;
+}
+
+figcaption{
+    position: relative;
+    top: 15px;
+    margin: 5px;
+    font-family: 'Economica', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 2px 5px rgba(179, 133, 58, 0.400);
+}
+
+.preco{
+    color:brown;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+}
+
+.scale{
+    overflow:hidden;
+}
+
+.scale img{
+    width: 90%; height: 90%;
+    transition: scale 400ms;
+}
+
+
+
+
+.destaques {
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    top: 1200px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+  
+
+  
+  .scale:not(:first-child) {
+      margin-left: -650px;
+  }
+  
+  .scale:hover img {
+    scale: 120%;
+  }
+
+  .scale img{
+    position: relative;
+    transition: scale 400ms;
+    left: 5px;
+  }
+
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>> AVISO <<<<<<<<<<<<<<< */
+  .aviso{
+    position: relative;
+    top: -15px;
+    background-color:rgba(139, 0, 0, 0.733);
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+.aviso h2{
+    position: relative;
+    color: #fff;
+    top:5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+     /* >>>>>>>>>>>>>>>>>> COLAGEM DE FOTOS <<<<<<<<<<<<<<< */
+     .art{
+      position: relative;
+     top: 150px
+  }
+  
+  .vinho{
+      position: relative;
+      top: 0px;
+      left: 257px;
+      height: 447px;
+  }
+
+   /* >>>>>>>>>>>>>>>>>> TAVERNA E ADEGA <<<<<<<<<<<<<<< */
+
+.visitas{
+  position: relative;
+  top: 150px;
+  left: -50px;
+  background-color: #17141d;
+  height: 250px;
+  width: 40%;
+  box-shadow: -1rem 0 3rem #000;
+  border-radius: 5px;
+}
+
+.visitas img{
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  left: -480px;
+  top: -230px;
+  box-shadow: -1rem 0 3rem #000;
+}
+
+.visitas h1{
+  position: relative;
+  top: 20px;
+  font-weight: 2;
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Economica', sans-serif;
+  text-shadow: -1rem 0 3rem #000;
+  font-size: 30px;
+}
+
+.visitas pre{
+  position: relative;
+  top: 50px;
+  font-weight: 2;
+  position: relative;
+  color: white;
+  font-family: 'Economica', sans-serif;
+  text-shadow: -1rem 0 3rem #000;
+  font-size: 20px;
+}
+
+          /* >>>>>> TAVERNA <<<<<<<< */
+          .taverna{
+            position: relative;
+           top:250px;
+            left: -50px;
+            background-color: #17141d;
+            height: 250px;
+            width: 40%;
+            box-shadow: -1rem 0 3rem #000;
+            border-radius: 5px;
+          }
+          
+          .taverna img{
+            position: relative;
+            width: 400px;
+            border-radius: 50%;
+            left: 480px;
+            top: -230px;
+            box-shadow: -1rem 0 3rem #000;
+          }
+          
+          .taverna h1{
+            position: relative;
+            top: 20px;
+            font-weight: 2;
+            position: relative;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Economica', sans-serif;
+            text-shadow: -1rem 0 3rem #000;
+            font-size: 30px;
+          }
+          
+          .taverna pre{
+            position: relative;
+            top: 50px;
+            font-weight: 2;
+            position: relative;
+            color: white;
+            font-family: 'Economica', sans-serif;
+            text-shadow: -1rem 0 3rem #000;
+            font-size: 20px;
+          }
+
+
+
+         /* >>>>>>>>>>>>>> RODAPÉ <<<<<<<<< */
+         footer{
+          position: relative;
+          height: 400px;
+          display: flex;
+          align-items: center;
+          background-color: #17141d;
+          top: 550px;
+      }
+      
+      .logo_footer img{
+          position: relative;
+          width: 300px;
+          top: 100px;
+          left: -150px;
+      }
+      
+      .redes{
+          position: relative;
+          top: 90px;
+          left: -150px;
+          
+      }
+
+      .redes img{
+        position: relative;
+        left: 20px;
+        width: 40px;
+    }
+      
+      .contato{
+          position: relative;
+          left: 260px;
+          top: -105px;
+          margin-right: 400px;
+          margin-left:  200px;
+          
+      }
+      
+      .atend{
+          position: relative;
+          margin-right: 100px;
+          top: -35px;
+          
+      }
+      
+      .ajuda{
+          position: relative;
+          margin-right: 200px;
+      }
+      
+      .inst{
+          position: relative;
+
+      }
+      
+     
+      
+      a{
+          text-decoration: none;
+          color:#f5f5f5da;
+      }
+      
+      li{
+          list-style: none;
+      }
+      
+      
+      h1{
+          position: relative;
+          top: 10px;
+          color: rgb(179, 132, 58);
+      }
+      
+      h3{
+          position: relative;
+          top: -30px;
+          font-size: 20px;
+          color:#f5f5f5da;
+      }
+      
+      h4{
+          position: relative;
+          top: -40px;
+          font-size: 15px;
+          color: #FFF8EE;
+      }
+
+      hr{
+        opacity: 0.2;
+      }
+
+
+
+
+
+
