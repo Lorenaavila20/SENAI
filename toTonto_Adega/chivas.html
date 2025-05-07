@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="./CSS/produto.css">
+
+
+<title> Whisky Chivas 12 Anos </title>
+
+  </head>
+<body>
+
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+                
+               <a href="./index.html"> <img src="./IMG/logo.png" alt="Logo" height="90px"></a>
+
+                <nav>
+                    <ul>
+                        <li> <a href="./index.html">INICIAL</a></li>
+                        <li> <a href="#">CATÁLOGO</a></li>
+                        <li> <a href="#">SOBRE</a></li>
+                        <li> <a href="#">RECEITAS</a></li>
+                        <li> <a href="#">LOGIN</a></li>
+                        
+                    </ul>
+                </nav>
+
+                    <div class="btn-contato">
+                        <a href="#"> <button>CONTATO</button></a>
+                    </div> <!--Btn_contato-->
+
+            </div> <!--Flex-->
+
+        </div> <!--Container-->
+      
+    </header>
+
+   
+
+<aside class="painel">
+
+    <figure>
+        <img src="./IMG/Prod_Destaque/Chivas.png">
+    </figure>
+
+    <section class="atalho">
+      <a href="./index.html"> Home ♦</a>
+      
+      <a href="./destilados.html"> Importados ♦</a>
+
+      <a href="./destilados.html"> Destilados ♦</a>
+      
+     <u> <a class="pag_atual" href="./chivas.html"> Chivas </a> </u>
+    </section>
+
+<div class="produto">
+    <h2> Whisky Chivas 12 anos 1L </h2>
+  <h1> R$ 159,99  <h3>  ou 1x R$ 140,99 s/ juros</h3> </h1>
+</div> <!--produto-->
+<br>
+<hr>
+
+<div class="quantity-box">
+    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+    <input class="quantity-input" type="text" value="1" readonly>
+    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+  </div> <!--quantity-box-->
+
+  <div class="adc_sacola">
+    <h3> Adicionar à Sacola </h3>
+  </div> <!--Adc à Sacola-->
+</aside> <!--painel-->
+
+<br>
+<hr>
+
+<div class="calculoFrete">
+ <pre><img src="./IMG/caminhão.png" width="25px">  Calcular frete e prazo </pre>  
+
+      <div class="colunaInput">  
+    <input  maxlength="9" class="inputCep" placeholder="Informe seu CEP">
+    <button id="" class="btn-cep" >OK</button>  
+      </div>    
+    </div>
+    
+     <div class="informacao-de-entrega">
+              <div class="shipping-preview-line"> 
+                <p><b>Entrega:</b></p>
+                <p>Correios Pac</p>
+              </div>
+               <div class="shipping-preview-line"> 
+                <p><b>Frete:</b></p>
+                <p>R$0,00</p>
+              </div>
+              <div class="shipping-preview-line padding-0"> 
+                <p><b>Prazo:</b></p>
+                <p class="shipping-estimated">Chegará entre 17 de agosto e 02 de setembro</p>
+              </div>
+            </div>
+<br> <br> <br>
+<hr>
+
+<button class="comprar">
+  <h3>Comprar</h3>
+</button>
+
+
+
+
+
+
+
+<script src="./JS/PRODUTO.JS"></script>
+
+</body>
+</html>
