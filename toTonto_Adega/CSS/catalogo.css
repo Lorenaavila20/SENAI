@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(../IMG/catalogo-fnd.jpg);
+    background-size: cover;
+    align-items: center;
+}
+
+.container{
+    max-width: 1020px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Justifica os itens: Extrema direita/esquerda/meio*/
+}
+
+header{
+    width: 100%;
+    padding: 10px 4%;
+    top: 0;
+    left: 0;
+    transition: .5s ;
+}
+
+header a{
+    color: rgb(179, 132, 58);
+}
+
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    
+    text-decoration: none;
+}
+
+.btn-contato button{
+    width: 110px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(29, 32, 54);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h1{
+    margin-top: 100px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poiret One', cursive;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+sans:700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+.snip1560 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: none !important;
+  position: relative;
+  padding: 10px;
+  border: 2px solid rgb(179, 132, 58);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* width: 1000;
+  height: 460; */
+}
+
+.snip1560:before {
+  content: '';
+  background-color: #000000;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: -1;
+}
+
+.snip1560 * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1560 img {
+  max-width: 100%;
+  vertical-align: top;
+  background-image: linear-gradient(#000000, #ffffff);
+}
+
+.snip1560 figcaption,
+.snip1560 .link {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.snip1560 h2,
+.snip1560 h3,
+.snip1560 h4 {
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.snip1560 h2 {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.7em;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.snip1560 h2 span {
+  color:rgb(202, 149, 65);
+}
+
+.snip1560 h3 {
+  font-size: 1.3em;
+  bottom: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.snip1560 h4 {
+  top: 0;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  opacity: 0.9;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.snip1560:hover img,
+.snip1560.hover img {
+  opacity: 0.35;
+}
+
+.coluna{
+    float: left;
+    width: 33.33%;
+}
+.icon::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.icon{
+    margin-top: 80;
+    margin-left: 235px;
+}
